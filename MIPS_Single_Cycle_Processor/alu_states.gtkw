@@ -1,0 +1,8 @@
+000 AND
+001 OR
+010 ADD
+011 NoState
+100 NoState
+101 NoState
+110 SUB
+111 SLT

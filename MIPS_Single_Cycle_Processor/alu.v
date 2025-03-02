@@ -9,7 +9,7 @@ module alu #(parameter WIDTH=8)
 always @ (*)
     case (alucontrol)
     3'b010: alurct <= srca + srcb; // ADD
-    3'b110: alurct <= srca + srcb; // SUB
+    3'b110: alurct <= srca - srcb; // SUB
     3'b000: alurct <= srca & srcb; // AND
     3'b001: alurct <= srca | srcb; // OR
     3'b111: alurct <= srca <= srcb; // SLT

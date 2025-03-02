@@ -48,7 +48,7 @@ module testbench();
     always @ (negedge clk)
         begin
         count <= count + 32'h00000001;
-        if (count == 32'h00000064) begin
+        if (count == 32'h00000070) begin
             $display ("Simulation timed out");
             $finish;
             end
